@@ -9,6 +9,8 @@ describe('testing ', () => {
         const expected: IUser[] = [{ Name: 'Test2', Year: 86 }, { Name: 'Test3', Year: 76 }];
 
         const mockFilter = jest.fn(filteredYear);
+
+        //Arrange
         const result = mockUsers.filter(mockFilter);
 
         // Assert
